@@ -1,4 +1,7 @@
-version: 1
-projects:
-  - repo_path: "maven-examples"
-    scan_command: "mvn install -DskipTests"
+repos:
+  - name: "my-repo"
+    projects:
+      - repo_path: "maven-examples"
+        scan_type: "all"
+        install_command: "mvn install -DskipTests"
+
